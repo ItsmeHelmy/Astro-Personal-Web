@@ -1,0 +1,66 @@
+---
+export interface Props {
+  title: string;
+  activePage: 'developer' | 'trader' | 'footballer' | 'farmer';
+}
+
+const { title, activePage } = Astro.props;
+
+const navItems = [
+  { href: '/',           label: 'Developer',  icon: '💻', id: 'developer'  },
+  { href: '/trader',     label: 'Trader',     icon: '📈', id: 'trader'     },
+  { href: '/footballer', label: 'Footballer', icon: '⚽', id: 'footballer' },
+  { href: '/farmer',     label: 'Farmer',     icon: '🌾', id: 'farmer'     },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <span class="nav-brand">Helmy</span>
+        <ul class="nav-links">
+          {navItems.map(item => (
+            <li>
+              <a
+                href={item.href}
+                class={activePage === item.id ? 'active' : ''}
+                aria-current={activePage === item.id ? 'page' : undefined}
+              >
+                <span aria-hidden="true">{item.icon}</span>
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page">
+      <div class="page-inner">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© {new Date().getFullYear()} Helmy · Built with <a href="https://astro.build" target="_blank" rel="noopener">Astro</a></p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

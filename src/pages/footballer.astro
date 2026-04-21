@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Footballer — Helmy" activePage="footballer">
+
+  <section class="hero">
+    <span class="hero-badge badge-footballer">⚽ On the Pitch</span>
+    <h1 class="hero-title">
+      The game lives<br />
+      <span class="accent-footballer">in the details</span>.
+    </h1>
+    <p class="hero-subtitle">
+      Passionate footballer who believes in teamwork, discipline, and
+      the beautiful game. Playing since childhood, competing with heart.
+    </p>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value accent-footballer">10+</div>
+      <div class="stat-label">Years Playing</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-footballer">CAM</div>
+      <div class="stat-label">Position</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-footballer">Right</div>
+      <div class="stat-label">Dominant Foot</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-footballer">11v11</div>
+      <div class="stat-label">Format</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">My Game</h2>
+  <div class="cards" style="margin-bottom: 2.5rem;">
+    <div class="card card-footballer">
+      <div class="card-icon">🎯</div>
+      <div class="card-title">Attacking Mindset</div>
+      <div class="card-desc">Creative midfielder who loves finding pockets of space and threading key passes.</div>
+    </div>
+    <div class="card card-footballer">
+      <div class="card-icon">🏃</div>
+      <div class="card-title">Fitness & Conditioning</div>
+      <div class="card-desc">Committed to strength training, agility drills, and staying match-fit year-round.</div>
+    </div>
+    <div class="card card-footballer">
+      <div class="card-icon">🧠</div>
+      <div class="card-title">Football IQ</div>
+      <div class="card-desc">Reading the game, anticipating plays, and making smart decisions under pressure.</div>
+    </div>
+    <div class="card card-footballer">
+      <div class="card-icon">🤝</div>
+      <div class="card-title">Team Player</div>
+      <div class="card-desc">Building chemistry on the pitch — football is a collective sport, not a solo show.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Clubs & Competitions</h2>
+  <div class="tags">
+    {[
+      'Local League', 'Futsal', '5-a-side', 'Street Football',
+      'Tournaments', 'Friendly Matches', 'Training Sessions',
+    ].map(item => (
+      <span class="tag">{item}</span>
+    ))}
+  </div>
+
+  <h2 class="section-title">Favourite Players</h2>
+  <div class="tags">
+    {[
+      'Toni Kroos', 'Kevin De Bruyne', 'Andrés Iniesta',
+      'Luka Modrić', 'Ronaldinho',
+    ].map(player => (
+      <span class="tag">{player}</span>
+    ))}
+  </div>
+
+</Layout>

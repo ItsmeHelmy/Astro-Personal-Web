@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Trader — Helmy" activePage="trader">
+
+  <section class="hero">
+    <span class="hero-badge badge-trader">📈 Active Trader</span>
+    <h1 class="hero-title">
+      Markets are my<br />
+      <span class="accent-trader">second home</span>.
+    </h1>
+    <p class="hero-subtitle">
+      Quantitative trader and market analyst with a focus on technical
+      analysis, risk management, and building systematic strategies.
+    </p>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value accent-trader">2+</div>
+      <div class="stat-label">Years Trading</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-trader">Forex</div>
+      <div class="stat-label">Primary Market</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-trader">Stocks</div>
+      <div class="stat-label">Equity Market</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-trader">Crypto</div>
+      <div class="stat-label">Digital Assets</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Trading Approach</h2>
+  <div class="cards" style="margin-bottom: 2.5rem;">
+    <div class="card card-trader">
+      <div class="card-icon">📊</div>
+      <div class="card-title">Technical Analysis</div>
+      <div class="card-desc">Reading price action, chart patterns, and indicators to identify high-probability setups.</div>
+    </div>
+    <div class="card card-trader">
+      <div class="card-icon">🛡️</div>
+      <div class="card-title">Risk Management</div>
+      <div class="card-desc">Strict position sizing and stop-loss discipline to protect capital above all else.</div>
+    </div>
+    <div class="card card-trader">
+      <div class="card-icon">🤖</div>
+      <div class="card-title">Algorithmic Trading</div>
+      <div class="card-desc">Developing automated strategies and backtesting systems with Python and Pine Script.</div>
+    </div>
+    <div class="card card-trader">
+      <div class="card-icon">🌍</div>
+      <div class="card-title">Macro Awareness</div>
+      <div class="card-desc">Tracking global economic events and their market-moving implications.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Markets & Tools</h2>
+  <div class="tags">
+    {[
+      'Forex', 'Stocks', 'Crypto', 'Futures', 'Options',
+      'TradingView', 'MetaTrader', 'Pine Script', 'Python',
+      'Candlestick Patterns', 'Price Action', 'Fibonacci', 'ICT / SMC',
+    ].map(item => (
+      <span class="tag">{item}</span>
+    ))}
+  </div>
+
+</Layout>
