@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Farmer — Helmy" activePage="farmer">
+
+  <section class="hero">
+    <span class="hero-badge badge-farmer">🌾 Growing Things</span>
+    <h1 class="hero-title">
+      Rooted in the<br />
+      <span class="accent-farmer">land</span>.
+    </h1>
+    <p class="hero-subtitle">
+      Farmer at heart — growing food, connecting with nature, and
+      believing that caring for the earth is one of life's most meaningful acts.
+    </p>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value accent-farmer">🌱</div>
+      <div class="stat-label">Organic Focus</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-farmer">🥕</div>
+      <div class="stat-label">Vegetables</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-farmer">🌿</div>
+      <div class="stat-label">Herbs & Spices</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-farmer">♻️</div>
+      <div class="stat-label">Sustainable</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Farming Interests</h2>
+  <div class="cards" style="margin-bottom: 2.5rem;">
+    <div class="card card-farmer">
+      <div class="card-icon">🥬</div>
+      <div class="card-title">Vegetable Gardening</div>
+      <div class="card-desc">Growing seasonal vegetables from seed to harvest — tomatoes, chilies, leafy greens, and more.</div>
+    </div>
+    <div class="card card-farmer">
+      <div class="card-icon">🌻</div>
+      <div class="card-title">Permaculture</div>
+      <div class="card-desc">Designing self-sustaining ecosystems that work with nature rather than against it.</div>
+    </div>
+    <div class="card card-farmer">
+      <div class="card-icon">💧</div>
+      <div class="card-title">Water Management</div>
+      <div class="card-desc">Rainwater harvesting, drip irrigation, and efficient water use for healthy crops.</div>
+    </div>
+    <div class="card card-farmer">
+      <div class="card-icon">🐓</div>
+      <div class="card-title">Livestock</div>
+      <div class="card-desc">Raising chickens and small animals as part of an integrated farming approach.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Crops & Practices</h2>
+  <div class="tags">
+    {[
+      'Rice', 'Chili', 'Tomato', 'Cassava', 'Banana',
+      'Composting', 'Organic Fertiliser', 'Crop Rotation',
+      'Intercropping', 'Seed Saving', 'Natural Pest Control',
+    ].map(item => (
+      <span class="tag">{item}</span>
+    ))}
+  </div>
+
+</Layout>

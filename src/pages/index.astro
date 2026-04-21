@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Developer — Helmy" activePage="developer">
+
+  <section class="hero">
+    <span class="hero-badge badge-dev">🚀 Available for Work</span>
+    <h1 class="hero-title">
+      Hi, I'm <span class="accent-dev">Helmy</span>.<br />
+      I build things for the web.
+    </h1>
+    <p class="hero-subtitle">
+      Full-stack developer passionate about crafting clean, performant
+      applications. I turn ideas into reality with modern web technologies.
+    </p>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value accent-dev">3+</div>
+      <div class="stat-label">Years Coding</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-dev">20+</div>
+      <div class="stat-label">Projects Built</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-dev">10+</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value accent-dev">∞</div>
+      <div class="stat-label">Curiosity</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">What I Do</h2>
+  <div class="cards" style="margin-bottom: 2.5rem;">
+    <div class="card card-dev">
+      <div class="card-icon">🖥️</div>
+      <div class="card-title">Frontend Development</div>
+      <div class="card-desc">Building responsive, accessible UIs with React, Astro, and modern CSS.</div>
+    </div>
+    <div class="card card-dev">
+      <div class="card-icon">⚙️</div>
+      <div class="card-title">Backend Development</div>
+      <div class="card-desc">Designing scalable APIs and services with Node.js, Python, and databases.</div>
+    </div>
+    <div class="card card-dev">
+      <div class="card-icon">☁️</div>
+      <div class="card-title">DevOps & Cloud</div>
+      <div class="card-desc">Deploying and managing applications on cloud platforms with CI/CD pipelines.</div>
+    </div>
+    <div class="card card-dev">
+      <div class="card-icon">📱</div>
+      <div class="card-title">Mobile Development</div>
+      <div class="card-desc">Creating cross-platform mobile experiences with React Native.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Tech Stack</h2>
+  <div class="tags">
+    {[
+      'JavaScript', 'TypeScript', 'React', 'Astro', 'Node.js',
+      'Python', 'PostgreSQL', 'MongoDB', 'Docker', 'Git',
+      'Tailwind CSS', 'REST APIs', 'GraphQL', 'Linux',
+    ].map(skill => (
+      <span class="tag">{skill}</span>
+    ))}
+  </div>
+
+</Layout>
